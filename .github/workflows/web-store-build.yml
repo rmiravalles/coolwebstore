@@ -16,6 +16,8 @@ jobs:
             
             - name: Restore
               uses: zyactions/dotnet-restore@v1
+              with:
+                workspace: coolwebstore.sln
 
             - name: Build
               run: dotnet build --configuration Release
