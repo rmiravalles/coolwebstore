@@ -3,7 +3,9 @@
 name: webstore-ci-cd
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 env:
   AZURE_WEBAPP_NAME: 'coolstore400'
